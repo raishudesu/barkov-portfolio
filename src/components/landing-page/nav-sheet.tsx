@@ -18,19 +18,14 @@ import { routes } from "./data";
 const NavSheet = () => {
   return (
     <Sheet>
-      <SheetTrigger
-        asChild
-        className="rounded-full border border-muted-foreground"
-      >
-        <Button size={"lg"}>
+      <SheetTrigger asChild className="rounded-full">
+        <Button variant={"outline"} size={"lg"}>
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-transparent backdrop-blur-md text-primary-foreground border-l border-muted-foreground">
+      <SheetContent className="bg-transparent backdrop-blur-md border-l border-muted-foreground">
         <SheetHeader className="text-center">
-          <SheetTitle className="space-mono-regular text-primary-foreground">
-            barkov
-          </SheetTitle>
+          <SheetTitle className="space-mono-regular">barkov</SheetTitle>
           <SheetDescription>Navigate</SheetDescription>
         </SheetHeader>
         <div className="grid gap-4 p-4">
@@ -38,7 +33,7 @@ const NavSheet = () => {
             <Button
               key={index}
               variant={"link"}
-              className="rounded-md  font-medium py-4 flex gap-2 items-center justify-center cursor-pointer  text-primary-foreground"
+              className="rounded-md  font-medium py-4 flex gap-2 items-center justify-center cursor-pointer "
               asChild
             >
               <Link

@@ -10,7 +10,7 @@ const HeroCta = () => {
     try {
       await navigator.clipboard.writeText(email);
 
-      toast("Email copied to clipboard ✅");
+      toast("Email copied to clipboard.");
     } catch (err) {
       console.error("Failed to copy: ", err);
     }

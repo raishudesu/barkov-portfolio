@@ -12,7 +12,22 @@ const NavButtons = () => {
       >
         Home
       </Button>
-
+      <Button variant={"ghost"} size={"sm"} asChild>
+        <Link
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          hashSpy={true}
+          duration={500}
+          isDynamic={true}
+          ignoreCancelEvents={false}
+          offset={-100}
+          className="text-sm font-medium p-2 px-3 flex gap-2 items-center cursor-pointer"
+        >
+          <span className="hidden md:block">About</span>
+        </Link>
+      </Button>
       <Button variant={"ghost"} size={"sm"} asChild>
         <Link
           activeClass="active"

@@ -25,12 +25,12 @@ const Hero = () => {
             </span>
           </div>
           <h1
-            className={`space-mono-regular font-medium text-7xl tracking-wider`}
+            className={`space-mono-regular font-medium text-5xl md:text-7xl tracking-wider`}
           >
             Always think outside the box.
           </h1>
           <span className="gap-2">
-            <p className="font-mono text-lg tracking-tight">
+            <p className="font-mono text-md md:text-lg tracking-tight">
               Hey there! I am Barysh Bacaltos, a Software Developer.
             </p>
           </span>
