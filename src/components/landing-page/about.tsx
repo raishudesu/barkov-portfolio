@@ -2,13 +2,12 @@ import { AspectRatio } from "../ui/aspect-ratio";
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0C0D0C] space-mono-regular"
-    >
-      <div className="max-w-6xl mx-auto ">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0C0D0C]">
+      <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4">About Me</h2>
+          <h2 className="text-xl sm:text-2xl font-bold mb-4  space-mono-regular">
+            About Me
+          </h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
