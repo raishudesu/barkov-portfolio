@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -14,10 +12,13 @@ import {
 import { Link } from "react-scroll";
 import { Menu } from "lucide-react";
 import { routes } from "./data";
+import { useState } from "react";
 
 const NavSheet = () => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild className="rounded-full">
         <Button variant={"outline"} size={"lg"}>
           <Menu />
@@ -46,6 +47,7 @@ const NavSheet = () => {
                 isDynamic={true}
                 ignoreCancelEvents={false}
                 offset={-100}
+                onClick={() => setOpen(false)}
               >
                 {name}
               </Link>

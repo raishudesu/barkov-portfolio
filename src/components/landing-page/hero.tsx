@@ -3,7 +3,10 @@ import HeroCta from "./hero-cta";
 
 const Hero = () => {
   return (
-    <div className="w-full relative h-screen flex items-center justify-center overflow-hidden text-[#fafafa]">
+    <div
+      id="home"
+      className="w-full relative h-screen flex items-center justify-center overflow-hidden text-[#fafafa]"
+    >
       <div className="absolute inset-0 z-0">
         <Beams
           beamWidth={2}

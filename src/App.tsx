@@ -3,6 +3,7 @@ import Hero from "@/components/landing-page/hero";
 import Nav from "@/components/landing-page/nav";
 import About from "./components/landing-page/about";
 import Projects from "./components/landing-page/projects";
+import Footer from "./components/footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
@@ -14,7 +15,7 @@ export default function Home() {
       {/* <HowItWorks /> */}
       {/* <Benefits /> */}
       {/* <Cta /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
