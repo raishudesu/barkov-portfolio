@@ -4,18 +4,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { GithubIcon, Link } from "lucide-react";
+import BlurText from "../BlurText";
 
 const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0C0D0C]">
       <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4  space-mono-regular">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4 space-mono-regular">
             Projects
           </h2>
-          <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Here are some of my projects I'm proud of.
-          </p>
+          <span className="flex justify-center">
+            <BlurText
+              text="Here are some of my projects I'm proud of."
+              animateBy="words"
+              direction="top"
+              className="leading-7 [&:not(:first-child)]:mt-6"
+              delay={50}
+            />
+          </span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 ">
@@ -37,8 +44,10 @@ const Projects = () => {
                 {project.projectDescription}
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {project.stack.map((stack) => (
-                  <Badge variant={"outline"}>{stack}</Badge>
+                {project.stack.map((stack, idx) => (
+                  <Badge key={idx} variant={"outline"}>
+                    {stack}
+                  </Badge>
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-2">

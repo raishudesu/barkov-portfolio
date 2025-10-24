@@ -1,3 +1,4 @@
+import BlurText from "../BlurText";
 import { AspectRatio } from "../ui/aspect-ratio";
 
 const About = () => {
@@ -19,11 +20,13 @@ const About = () => {
             />
           </AspectRatio>
           <div className="flex items-center">
-            <p className="leading-7 [&:not(:first-child)]:mt-6">
-              An IT Graduate. Technology Enthusiast with a touch of business
-              concepts. Loves to build, putting ideas into reality. Has
-              attention to detail.
-            </p>
+            <BlurText
+              text="An IT Graduate. Technology Enthusiast with a touch of business concepts. Loves to build, putting ideas into reality. Has attention to detail."
+              animateBy="words"
+              direction="top"
+              className="leading-7 [&:not(:first-child)]:mt-6"
+              delay={50}
+            />
           </div>
         </div>
       </div>

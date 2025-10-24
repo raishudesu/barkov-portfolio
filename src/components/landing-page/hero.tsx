@@ -1,5 +1,6 @@
 import Beams from "@/components/Beams";
 import HeroCta from "./hero-cta";
+import BlurText from "../BlurText";
 
 const Hero = () => {
   return (
@@ -27,10 +28,15 @@ const Hero = () => {
               🇵🇭 IT | Software Developer
             </span>
           </div>
-          <h1
-            className={`space-mono-regular font-medium text-5xl md:text-7xl tracking-wider`}
-          >
-            Always think outside the box.
+
+          <h1>
+            <BlurText
+              text="Always think outside the box."
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="space-mono-regular font-medium text-5xl md:text-7xl tracking-wider"
+            />
           </h1>
           <span className="gap-2">
             <p className="font-mono text-md md:text-lg tracking-tight">
