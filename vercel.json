@@ -5,7 +5,7 @@
     }
   },
   "env": {
-    "SMTP_USER": "@smtp_user",
-    "SMTP_PASSWORD": "@smtp_password"
+    "SMTP_USER": "@SMTP_USER",
+    "SMTP_PASSWORD": "@SMTP_PASSWORD"
   }
 }
