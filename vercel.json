@@ -3,9 +3,5 @@
     "api/send-email.js": {
       "maxDuration": 30
     }
-  },
-  "env": {
-    "SMTP_USER": "@SMTP_USER",
-    "SMTP_PASSWORD": "@SMTP_PASSWORD"
   }
 }
