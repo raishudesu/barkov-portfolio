@@ -5,6 +5,7 @@ import About from "./components/landing-page/about";
 import Projects from "./components/landing-page/projects";
 import Footer from "./components/footer";
 import Contact from "./components/landing-page/contact";
+import Certificates from "./components/landing-page/certificates";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </div>

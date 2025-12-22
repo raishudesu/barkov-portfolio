@@ -2,8 +2,22 @@ import fundrLogo from "@/assets/logos/fundr-logo.svg";
 import rentaLogo from "@/assets/logos/renta-logo.svg";
 import parksuLogo from "@/assets/logos/parksu.svg";
 import devfolioPfp from "@/assets/logos/devfolio.svg";
+import popchainPfp from "@/assets/logos/popchain_logo.png";
+import suiBuilderProgramCertificate from "@/assets/certificates/sui-certificate.png";
 
 export const projects = [
+  {
+    projectName: "PopChain",
+    projectDescription:
+      "PopChain lets you prove you were there. Scan, mint, collect. Your attendance, secured forever on the blockchain.",
+    projectImageUrl: popchainPfp,
+    projectImageAlt: "popchain-pfp",
+    stack: ["NextJS", "Sui Blockchain", "Tusky", "ShadcnUI", "Supabase"],
+    links: {
+      github: "https://github.com/raishudesu/popchain-dapp",
+      live: "https://popchain.vercel.app",
+    },
+  },
   {
     projectName: "Renta",
     projectDescription:
@@ -51,5 +65,14 @@ export const projects = [
       github: "https://github.com/raishudesu/devfolio",
       live: "https://devfolio-prod.vercel.app",
     },
+  },
+];
+
+export const certificates = [
+  {
+    certificateName: "Sui Builder Program",
+    certificateImageUrl: suiBuilderProgramCertificate,
+    certificateImageAlt: "sui-builder-program-certificate",
+    certificateDescription: "Sui Builder Program by YGG Pilipinas",
   },
 ];
