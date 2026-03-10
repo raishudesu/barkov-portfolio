@@ -5,6 +5,11 @@ import devfolioPfp from "@/assets/logos/devfolio.svg";
 import popchainPfp from "@/assets/logos/popchain_logo.png";
 import suiBuilderProgramCertificate from "@/assets/certificates/sui-certificate.png";
 
+type SkillLogo = {
+  name: string;
+  logoUrl: string;
+};
+
 export const projects = [
   {
     projectName: "PopChain",
@@ -74,5 +79,88 @@ export const certificates = [
     certificateImageUrl: suiBuilderProgramCertificate,
     certificateImageAlt: "sui-builder-program-certificate",
     certificateDescription: "Sui Builder Program by YGG Pilipinas",
+  },
+];
+
+export const skillLogos: SkillLogo[] = [
+  {
+    name: "TypeScript",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  },
+  {
+    name: "JavaScript",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "React",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "Next.js",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    name: "Node.js",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  },
+  {
+    name: "Express",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    name: "Tailwind CSS",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    name: "Supabase",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+  },
+  {
+    name: "PostgreSQL",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "MySQL",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  {
+    name: "Git",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "Laravel",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+  },
+  {
+    name: "DotNet",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+  },
+  {
+    name: "AWS",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+  },
+  {
+    name: "Firebase",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+  {
+    name: "Linux",
+    logoUrl:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
 ];

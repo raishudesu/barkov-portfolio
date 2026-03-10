@@ -1,31 +1,69 @@
-import Beams from "@/components/Beams";
+// import Beams from "@/components/Beams";
 import HeroCta from "./hero-cta";
 import BlurText from "../BlurText";
-
+import { useEffect, useState } from "react";
+import ColorBends from "../color-bends";
 const Hero = () => {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const root = window.document.documentElement;
+    const updateMode = () => setIsDark(root.classList.contains("dark"));
+    updateMode();
+
+    const observer = new MutationObserver(updateMode);
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div
       id="home"
-      className="w-full relative h-screen flex items-center justify-center overflow-hidden text-[#fafafa]"
+      className={`w-full relative h-screen flex items-center justify-center overflow-hidden ${
+        isDark ? "text-[#fafafa]" : "text-[#0C0D0C]"
+      }`}
     >
       <div className="absolute inset-0 z-0">
-        <Beams
+        {/* <Beams
           beamWidth={2}
           beamHeight={15}
           beamNumber={12}
-          lightColor="#ffffff"
+          lightColor={"#ffffff"}
+          // backgroundColor={isDark ? "#000000" : "#fafafa"}
           speed={2}
           noiseIntensity={1.75}
           scale={0.2}
           rotation={24}
+        /> */}
+        <ColorBends
+          colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+          rotation={0}
+          speed={0.2}
+          scale={1}
+          frequency={1}
+          warpStrength={1}
+          mouseInfluence={1}
+          parallax={0.5}
+          noise={0.1}
+          transparent
+          autoRotate={0}
         />
       </div>
 
       <div className="relative z-20 flex flex-col-reverse md:flex-row gap-4 justify-between items-center max-w-screen-lg px-4">
         <div className="flex flex-col gap-4">
           <div className="mb-6 inline-block">
-            <span className="px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm text-white backdrop-blur-sm">
-              🇵🇭 IT | Software Developer
+            <span
+              className={`px-4 py-2 rounded-full text-sm backdrop-blur-sm ${
+                isDark
+                  ? "bg-white/10 border border-white/20 text-white"
+                  : "bg-black/10 border border-black/20 text-black"
+              }`}
+            >
+              IT | Software Developer
             </span>
           </div>
 

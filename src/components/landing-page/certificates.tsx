@@ -6,7 +6,7 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0C0D0C]"
+      className="bg-background py-20 px-4 text-foreground sm:px-6 lg:px-8"
     >
       <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16">
@@ -25,7 +25,7 @@ const Certificates = () => {
               <h3 className="text-xl font-bold">
                 {certificate.certificateName}
               </h3>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-muted-foreground">
                 {certificate.certificateDescription}
               </p>
             </SpotlightCard>

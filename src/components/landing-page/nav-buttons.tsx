@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { ModeToggle } from "../mode-toggle";
 
 const NavButtons = () => {
   return (
@@ -60,6 +61,7 @@ const NavButtons = () => {
           <span className="hidden md:block">Contact</span>
         </Link>
       </Button>
+      <ModeToggle />
     </>
   );
 };

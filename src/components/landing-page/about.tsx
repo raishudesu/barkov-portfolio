@@ -1,16 +1,19 @@
 import BlurText from "../BlurText";
+import SpotlightCard from "../SpotlightCard";
 import { AspectRatio } from "../ui/aspect-ratio";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#0C0D0C]">
-      <div className="max-w-5xl mx-auto ">
-        <div className="text-center mb-16">
-          <h2 className="text-xl sm:text-2xl font-bold mb-4  space-mono-regular">
-            About Me
-          </h2>
-        </div>
-
+    <section
+      id="about"
+      className="bg-background py-20 px-4 text-foreground sm:px-6 lg:px-8"
+    >
+      <div className="text-center">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4  space-mono-regular">
+          About Me
+        </h2>
+      </div>
+      <SpotlightCard className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8">
           <AspectRatio ratio={1 / 1} className="rounded-full overflow-hidden">
             <img
@@ -29,7 +32,7 @@ const About = () => {
             />
           </div>
         </div>
-      </div>
+      </SpotlightCard>
     </section>
   );
 };

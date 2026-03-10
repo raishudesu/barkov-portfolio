@@ -185,6 +185,7 @@ interface BeamsProps {
   beamHeight?: number;
   beamNumber?: number;
   lightColor?: string;
+  backgroundColor?: string;
   speed?: number;
   noiseIntensity?: number;
   scale?: number;
@@ -196,6 +197,7 @@ const Beams: FC<BeamsProps> = ({
   beamHeight = 15,
   beamNumber = 12,
   lightColor = "#ffffff",
+  backgroundColor = "#000000",
   speed = 2,
   noiseIntensity = 1.75,
   scale = 0.2,
@@ -275,7 +277,7 @@ const Beams: FC<BeamsProps> = ({
         <DirLight color={lightColor} position={[0, 3, 10]} />
       </group>
       <ambientLight intensity={1} />
-      <color attach="background" args={["#000000"]} />
+      <color attach="background" args={[backgroundColor]} />
       <PerspectiveCamera makeDefault position={[0, 0, 20]} fov={30} />
     </CanvasWrapper>
   );

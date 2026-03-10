@@ -13,6 +13,7 @@ import { Link } from "react-scroll";
 import { Menu } from "lucide-react";
 import { routes } from "./data";
 import { useState } from "react";
+import { ModeToggle } from "../mode-toggle";
 
 const NavSheet = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ const NavSheet = () => {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-transparent backdrop-blur-md border-l border-muted-foreground">
+      <SheetContent className=" border-l border-muted-foreground">
         <SheetHeader className="text-center">
           <SheetTitle className="space-mono-regular">barkov</SheetTitle>
           <SheetDescription>Navigate</SheetDescription>
@@ -54,7 +55,9 @@ const NavSheet = () => {
             </Button>
           ))}
         </div>
-        <SheetFooter>{/* <ModeToggle /> */}</SheetFooter>
+        <SheetFooter>
+          <ModeToggle />
+        </SheetFooter>
       </SheetContent>
     </Sheet>
   );

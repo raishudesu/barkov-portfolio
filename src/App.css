@@ -146,3 +146,16 @@
     font-style: italic;
   }
 }
+
+@keyframes skills-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-marquee-track {
+  animation: skills-marquee 30s linear infinite;
+}
