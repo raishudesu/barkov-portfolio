@@ -24,10 +24,10 @@ const About = () => {
           </AspectRatio>
           <div className="flex items-center">
             <BlurText
-              text="An IT Graduate. Technology Enthusiast with a touch of business concepts. Loves to build, putting ideas into reality. Has attention to detail."
+              text="An IT Graduate and a Full-Stack Developer. Technology Enthusiast with attention to detail. Loves to build, putting ideas into reality."
               animateBy="words"
               direction="top"
-              className="leading-7 [&:not(:first-child)]:mt-6"
+              className="leading-7 [&:not(:first-child)]:mt-6 text-muted-foreground"
               delay={50}
             />
           </div>

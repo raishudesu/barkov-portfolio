@@ -8,7 +8,10 @@ import BlurText from "../BlurText";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-background py-20 px-4 text-foreground sm:px-6 lg:px-8">
+    <section
+      id="projects"
+      className="bg-background py-20 px-4 text-foreground sm:px-6 lg:px-8"
+    >
       <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-xl sm:text-2xl font-bold mb-4 space-mono-regular">
@@ -19,7 +22,7 @@ const Projects = () => {
               text="Here are some of my projects I'm proud of."
               animateBy="words"
               direction="top"
-              className="leading-7 [&:not(:first-child)]:mt-6"
+              className="leading-7 [&:not(:first-child)]:mt-6 text-muted-foreground"
               delay={50}
             />
           </span>
@@ -40,7 +43,7 @@ const Projects = () => {
               <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">
                 {project.projectName}
               </h3>
-              <p className="leading-7 [&:not(:first-child)]:mt-6">
+              <p className="leading-7 [&:not(:first-child)]:mt-6 text-muted-foreground">
                 {project.projectDescription}
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
