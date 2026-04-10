@@ -69,7 +69,7 @@ const Hero = () => {
 
           <h1>
             <BlurText
-              text="Always think outside the box."
+              text="Let's turn ideas into reality."
               delay={150}
               animateBy="words"
               direction="top"

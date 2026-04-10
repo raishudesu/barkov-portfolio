@@ -15,7 +15,7 @@ const Projects = () => {
       <div className="max-w-5xl mx-auto ">
         <div className="text-center mb-16">
           <h2 className="text-xl sm:text-2xl font-bold mb-4 space-mono-regular">
-            Projects
+            Personal Projects
           </h2>
           <span className="flex justify-center">
             <BlurText

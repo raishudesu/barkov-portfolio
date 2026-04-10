@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Contact from "./components/landing-page/contact";
 import Certificates from "./components/landing-page/certificates";
 import SkillsSlider from "./components/landing-page/skills-slider";
+import FreelanceProjects from "./components/landing-page/freelance-projects";
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-hidden">
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <SkillsSlider />
       <Projects />
+      <FreelanceProjects />
       <Certificates />
       <Contact />
       <Footer />

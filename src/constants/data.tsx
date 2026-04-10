@@ -164,3 +164,22 @@ export const skillLogos: SkillLogo[] = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
   },
 ];
+
+export const freelanceProjects = [
+  {
+    projectName: "Mobeam",
+    projectDescription:
+      "An engineering calculator for structural engineers. It is a mobile app designed to perform analysis and design of structural beams efficiently. It provides step-by-step calculation results and PDF export for convenient sharing and documentation.",
+    projectImageAssets: [
+      {
+        imageUrl: "/projects/Mobeam/mobeam-1.jpg",
+        imageAlt: "mobeam-1",
+      },
+      {
+        imageUrl: "/projects/Mobeam/mobeam-2.jpg",
+        imageAlt: "mobeam-2",
+      },
+    ],
+    stack: ["Expo Go"],
+  },
+];
